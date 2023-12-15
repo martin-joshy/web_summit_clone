@@ -1,0 +1,339 @@
+
+/* Hamburger Menu Expansion */
+.logoBar
+{
+    height: 5em;
+    display: flex;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    background-color: #0d153a;
+
+}
+li
+{
+    list-style: none;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.textStyle
+{
+    color: #00aca8;
+    font-size: 1.5rem;
+    text-align: left;
+   
+    
+}
+.mainBox
+{
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 1.8rem;
+    background-color: #0d153a !important;
+   
+
+}
+.listStyle li
+{
+    padding-left: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.grBorder
+{
+    border-right: .1em solid #00aca8 !important;
+    
+    
+}
+@media screen and (max-width: 1025px)
+{
+    .grBorder
+    {
+        border: none !important;
+        
+    }
+}
+@media screen and (max-width: 472px)
+{
+    .logoBox
+    {
+        margin-top: 1rem;
+    }   
+}
+.regButStyle button
+{
+   margin-left: 1.7rem;
+   margin-bottom: 1rem;
+   padding-left: 1.2rem;
+   padding-right: 1.2rem;
+   padding-top: 0.7rem;
+   padding-bottom: 0.7rem;
+   font-size: 1.1rem;
+   color: #fff;
+   background-color: #00aca8;
+   border: none;
+} 
+.logo img
+{
+    height: 2.5em;
+}
+.logo
+{
+    width: 5rem; 
+
+}
+/* Home Page Styling */
+/* Hero */
+body
+{
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #fff;
+}
+.homepgNavBar
+{
+    display: flex;
+    justify-content:space-between;
+    height: 5rem;
+
+}
+.rightNavBox
+{
+    display: flex;
+    width: 30rem;
+    padding: .65rem;
+    justify-content: right;
+}
+.logoBox
+{
+    font-size: 1.18em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width:45rem;
+   
+    
+}
+@media (max-width: 723px) {
+    .logoBox{
+      font-size: 0.8rem;
+    }
+}
+.logoBox img
+{
+    height: 1.5em;   
+    margin-right: 1rem;
+}
+@media (max-width: 723px) {
+    .logoBox img{
+      height: 1.9rem;
+    }
+}
+#partnerTop
+{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-right: 0.4rem;
+    border:  solid #00aca8;
+    background-color: #fff;
+    color: #00aca8;
+    font-size: 15px;
+    font-weight: 400;
+    transition: background-color 0.4s;
+
+
+}
+#partnerTop:hover
+{
+    background-color:#00aca8;
+    color: #fff; 
+}
+
+#preRegTop
+{
+    background-color: #00aca8;
+    width: 16rem;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transition: background-color 0.4s;
+}
+#preRegTop:hover
+{
+    background-color: #5ac4c5;
+}
+@media (max-width: 837px) {
+    #partnerTop, #preRegTop {
+      display: none;
+    }
+}
+.hamburger
+{
+    cursor: pointer;
+    padding: 1.5rem;
+    
+
+}
+.bar
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.hamburger.active .bar:nth-child(2)
+{
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1)
+{
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3)
+{
+    transform: translateY(-8px) rotate(-45deg);
+}
+.hiddenContainer
+{
+    position: fixed;
+    right: -200%;
+    transition: 0.3s;
+    width: 100%;
+ 
+}
+.hiddenContainer.active
+{
+    right: 0;
+}
+
+#preRegMid
+{
+    color: #fff;
+    background-color: #00aca8;
+    border: none;
+    transition: background-color 0.4s;
+
+}
+#partnerMid
+{
+    color: #00aca8;
+    background-color: #fff;
+    border: #00aca8;  
+    transition: background-color 0.4s;
+    
+}
+#partnerMid:hover
+{
+    background-color:#00aca8;
+    color: #fff; 
+}
+#preRegMid:hover
+{
+    background-color: #5ac4c5;
+}
+[id$="Mid"]
+{
+    font-weight: 600;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 30px;
+    
+    
+}
+.heroContent
+{
+    padding-top: 90px;
+}
+.hero
+{
+    background-color: #00aca8;
+    background-image:url(image/Hero.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+}
+.heroContent p
+{
+    font-size: 1.2rem;
+}
+/* Info Box Styling */
+.infoBox
+{
+    padding-top: 50px;
+    background-color: #674ea0;
+    height: 100%;
+    padding-bottom: 50px;
+}
+.infoBox h1
+{
+    font-weight: bold;
+}
+.qBox
+{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+ 
+}
+.speakers
+{
+    padding-top: 4rem;
+    padding-left: 20px;
+
+}
+.speakers h1
+{
+    
+    color: #0d153a;
+    font-weight: 600;
+    
+}
+.imageContainer
+{
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+.imageContainer p
+{
+    position: absolute;
+    bottom: 1.3rem;
+    left: 1.2rem ;
+    right: 0;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+
+    
+}
+.embedVideo
+{
+    height: 45rem;
+    width: 100%;
+    padding: 2rem;
+
+}
+.embedVideoBox h2
+{
+    color: #0d153a;
+    font-weight: bolder;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
